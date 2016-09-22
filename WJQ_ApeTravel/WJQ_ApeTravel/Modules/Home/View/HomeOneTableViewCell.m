@@ -51,17 +51,18 @@
     // 作者头像
     self.picImageView = [UIImageView new];
     _picImageView.backgroundColor = [UIColor redColor];
+    
     // 图片适应尺寸
     _picImageView.clipsToBounds = YES;
     _picImageView.layer.cornerRadius = 25.f;
     [self.contentView addSubview:_picImageView];
+    
     // 作者名字
     self.usernameLabel = [UILabel new];
     _usernameLabel.textColor = [UIColor grayColor];
     _usernameLabel.font = [UIFont systemFontOfSize:12.f];
     _usernameLabel.textAlignment = NSTextAlignmentCenter;
     [self.contentView addSubview:_usernameLabel];
-    
     
     // 新闻标题
     self.titleLabel = [UILabel new];
@@ -89,12 +90,10 @@
 #warning 图片字符串有问题, 需要进行剪切
     NSURL *cover = [NSURL URLWithString:homeModel.cover];
     [_coverImageView sd_setImageWithURL:cover];
-    NSLog(@"%@", homeModel.cover);
     
     NSURL *pic = [NSURL URLWithString:[homeModel.author objectForKey:@"pic"]];
     [_picImageView sd_setImageWithURL:pic];
-    
-//    NSLog(@"%@", [homeModel.author objectForKey:@"username"]);
+
     _usernameLabel.text = [homeModel.author objectForKey:@"username"];
     
     _columnLabel.text = homeModel.column;
@@ -117,7 +116,7 @@
 #warning 图片尺寸需对应实际效果进行设置
     
     _coverImageView.frame = CGRectMake(0, 0, width, width / 2 - 30);
-    _columnLabel.frame = CGRectMake(0, 25, 80, 25);
+    _columnLabel.frame = CGRectMake(0, 25, 90, 25);
     
     _picImageView.center = CGPointMake(width / 2, width / 2 - 30);
     _picImageView.width = 50.f;
@@ -127,12 +126,7 @@
     _usernameLabel.width = 70.f;
     _usernameLabel.height = 20.f;
     _usernameLabel.center = CGPointMake(width / 2, width / 2 + 10);
-    
-    
-    
-    
-    
-    
+
     _titleLabel.frame = CGRectMake(0, 0, width - 100, 60);
     _titleLabel.center = CGPointMake(width / 2, width / 2 + 45);
     

@@ -8,7 +8,6 @@
 
 #import "HomeTableViewCell.h"
 #import "HomeModel.h"
-#import "UIImage+Categories.h"
 
 @interface HomeTableViewCell ()
 
@@ -17,6 +16,7 @@
 @property (nonatomic, retain) UILabel *titleLabel;
 @property (nonatomic, retain) UILabel *subjectLabel;
 @property (nonatomic, retain) UIImageView *icon_urlImageView;
+
 
 @end
 
@@ -44,7 +44,7 @@
     _columnLabel.font = [UIFont systemFontOfSize:14.f];
     _columnLabel.textColor = [UIColor whiteColor];
     _columnLabel.textAlignment = NSTextAlignmentCenter;
-    _columnLabel.backgroundColor = [UIColor greenColor];
+    _columnLabel.backgroundColor = [UIColor colorWithRed:0.29 green:0.75 blue:0.47 alpha:1.000];
     [self.contentView addSubview:_columnLabel];
     
 //    // 作者信息
@@ -69,45 +69,36 @@
     // 下方图片
     self.icon_urlImageView = [UIImageView new];
     [self.contentView addSubview:_icon_urlImageView];
+    
 }
 
 - (void)setHomeModel:(HomeModel *)homeModel {
     _homeModel = homeModel;
     // 添加图片
     
-#warning 图片字符串有问题, 需要进行剪切
     NSURL *cover = [NSURL URLWithString:homeModel.cover];
     [_coverImageView sd_setImageWithURL:cover];
     NSLog(@"%@", homeModel.cover);
-
+    
     _columnLabel.text = homeModel.column;
     _titleLabel.text = homeModel.title;
     _titleLabel.height = 60.f;
     _subjectLabel.text = homeModel.subject;
     NSURL *icon_url = [NSURL URLWithString:homeModel.icon_url];
     [_icon_urlImageView sd_setImageWithURL:icon_url];
-    
+#warning 图片字符串有问题, 需要进行剪切
 
-    
-    
+   
 }
 
 
 - (void)layoutSubviews {
     [super layoutSubviews];
     CGFloat width = self.contentView.bounds.size.width;
-//    CGFloat height = self.contentView.bounds.size.height;
 #warning 图片尺寸需对应实际效果进行设置
 
     _coverImageView.frame = CGRectMake(0, 0, width, width / 2 - 30);
-    
-//    _authorImageView.center = CGPointMake(width / 2, width / 2 - 30);
-//    _authorImageView.width = 50.f;
-//    _authorImageView.height = 50.f;
-//    _authorImageView.layer.cornerRadius = 25.f;
-    
-    
-    _columnLabel.frame = CGRectMake(0, 25, 80, 25);
+    _columnLabel.frame = CGRectMake(0, 25, 90, 25);
     
     _titleLabel.frame = CGRectMake(0, 0, width - 100, 60);
 
@@ -118,14 +109,9 @@
     _subjectLabel.center = CGPointMake(width / 2, width / 2 + 60);
     _icon_urlImageView.frame = CGRectMake(0, 0, 35, 35);
     _icon_urlImageView.center = CGPointMake(width / 2, width / 2 + 120);
+
     
 }
-
-
-
-
-
-
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];

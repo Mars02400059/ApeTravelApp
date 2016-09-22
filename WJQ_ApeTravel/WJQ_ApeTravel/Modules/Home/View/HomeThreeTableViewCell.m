@@ -104,6 +104,9 @@ UICollectionViewDataSource
     
     _subjectLabel.text = homeModel.subject;
     
+    if (0 < _subitemsArray.count) {
+        [_subitemsArray removeAllObjects];
+    }
     [self.subitemsArray addObjectsFromArray:homeModel.subitems];
     
     [_subitemsCollectionView reloadData];
@@ -138,7 +141,7 @@ UICollectionViewDataSource
     CGFloat width = self.contentView.bounds.size.width;
     //    CGFloat height = self.contentView.bounds.size.height;
 
-    _columnLabel.frame = CGRectMake(0, 20, 80, 25);
+    _columnLabel.frame = CGRectMake(0, 20, 90, 25);
     
     _titleLabel.frame = CGRectMake(0, 0, width - 90, 50);
     _titleLabel.center = CGPointMake(width / 2, 75);
