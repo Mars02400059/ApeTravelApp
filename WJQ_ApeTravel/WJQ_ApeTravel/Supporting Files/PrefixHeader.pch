@@ -1,0 +1,20 @@
+//
+//  PrefixHeader.pch
+//  WJQ_ApeTravel
+//
+//  Created by dllo on 16/9/21.
+//  Copyright © 2016年 Mars02400059. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import <AFNetworking.h>
+
+#import "UIImageView+WebCache.h"
+#import "UIView+Frame.h"
+
+#endif /* PrefixHeader_pch */

@@ -1,0 +1,921 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		496BD9FD1D92C6260013E78A /* HomeOneTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 496BD9FC1D92C6260013E78A /* HomeOneTableViewCell.m */; };
+		49D9AF851D92167B0095FB0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D9AF841D92167B0095FB0D /* main.m */; };
+		49D9AF881D92167B0095FB0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D9AF871D92167B0095FB0D /* AppDelegate.m */; };
+		49D9AF8B1D92167B0095FB0D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D9AF8A1D92167B0095FB0D /* ViewController.m */; };
+		49D9AF8E1D92167B0095FB0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D9AF8C1D92167B0095FB0D /* Main.storyboard */; };
+		49D9AF911D92167B0095FB0D /* WJQ_ApeTravel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 49D9AF8F1D92167B0095FB0D /* WJQ_ApeTravel.xcdatamodeld */; };
+		49D9AF931D92167B0095FB0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49D9AF921D92167B0095FB0D /* Assets.xcassets */; };
+		49D9AF961D92167B0095FB0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D9AF941D92167B0095FB0D /* LaunchScreen.storyboard */; };
+		49D9AFA11D92167B0095FB0D /* WJQ_ApeTravelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D9AFA01D92167B0095FB0D /* WJQ_ApeTravelTests.m */; };
+		49D9AFAD1D9217400095FB0D /* AboutMe.text in Sources */ = {isa = PBXBuildFile; fileRef = 49D9AFAC1D9217400095FB0D /* AboutMe.text */; };
+		49D9AFC91D9218420095FB0D /* NSString+Regex.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D9AFC61D9218420095FB0D /* NSString+Regex.m */; };
+		49D9AFCA1D9218420095FB0D /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D9AFC81D9218420095FB0D /* UIView+Frame.m */; };
+		49D9AFD51D9218560095FB0D /* AZBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D9AFCE1D9218560095FB0D /* AZBaseController.m */; };
+		49D9AFD61D9218560095FB0D /* AZBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D9AFD11D9218560095FB0D /* AZBaseModel.m */; };
+		49D9AFD71D9218560095FB0D /* AZBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D9AFD41D9218560095FB0D /* AZBaseView.m */; };
+		49D9AFDD1D921AB20095FB0D /* FootprintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D9AFDC1D921AB20095FB0D /* FootprintViewController.m */; };
+		49D9AFE01D921AC00095FB0D /* DiscountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D9AFDF1D921AC00095FB0D /* DiscountViewController.m */; };
+		49D9AFE31D921ADA0095FB0D /* CommunityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D9AFE21D921ADA0095FB0D /* CommunityViewController.m */; };
+		49D9AFE61D921AEC0095FB0D /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D9AFE51D921AEC0095FB0D /* RegisterViewController.m */; };
+		49D9AFE91D924C540095FB0D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D9AFE81D924C540095FB0D /* HomeViewController.m */; };
+		49D9AFEC1D9267DA0095FB0D /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D9AFEB1D9267DA0095FB0D /* HomeTableViewCell.m */; };
+		49D9AFEF1D926ED20095FB0D /* HomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D9AFEE1D926ED20095FB0D /* HomeModel.m */; };
+		49D9AFF21D9274940095FB0D /* NSString+Categories.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D9AFF11D9274940095FB0D /* NSString+Categories.m */; };
+		49D9AFF51D9274CF0095FB0D /* UIImage+Categories.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D9AFF41D9274CF0095FB0D /* UIImage+Categories.m */; };
+		49F5CFA31D936C49006DA898 /* HomeTwoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F5CFA21D936C49006DA898 /* HomeTwoTableViewCell.m */; };
+		49F5CFA61D936DC5006DA898 /* HomeThreeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F5CFA51D936DC5006DA898 /* HomeThreeTableViewCell.m */; };
+		BD3D6E32DDCC34E62666E2FD /* libPods-WJQ_ApeTravel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CC999D789EC9FBFB7905A5D /* libPods-WJQ_ApeTravel.a */; };
+		F07AB8AF9B8964CF49CE542D /* libPods-WJQ_ApeTravelTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1A9E80651E993C07C33559A /* libPods-WJQ_ApeTravelTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49D9AF9D1D92167B0095FB0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49D9AF781D92167B0095FB0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49D9AF7F1D92167B0095FB0D;
+			remoteInfo = WJQ_ApeTravel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02382DD6916FA7BEC0DC808E /* Pods-WJQ_ApeTravelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WJQ_ApeTravelTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WJQ_ApeTravelTests/Pods-WJQ_ApeTravelTests.release.xcconfig"; sourceTree = "<group>"; };
+		0A7BAD0048A38BA313E94CE9 /* Pods-WJQ_ApeTravelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WJQ_ApeTravelTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WJQ_ApeTravelTests/Pods-WJQ_ApeTravelTests.debug.xcconfig"; sourceTree = "<group>"; };
+		337E83EC9341EEF2D0DC4B82 /* Pods-WJQ_ApeTravel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WJQ_ApeTravel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WJQ_ApeTravel/Pods-WJQ_ApeTravel.debug.xcconfig"; sourceTree = "<group>"; };
+		496BD9FB1D92C6260013E78A /* HomeOneTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeOneTableViewCell.h; sourceTree = "<group>"; };
+		496BD9FC1D92C6260013E78A /* HomeOneTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeOneTableViewCell.m; sourceTree = "<group>"; };
+		49D9AF801D92167B0095FB0D /* WJQ_ApeTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WJQ_ApeTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49D9AF841D92167B0095FB0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		49D9AF861D92167B0095FB0D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		49D9AF871D92167B0095FB0D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		49D9AF891D92167B0095FB0D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		49D9AF8A1D92167B0095FB0D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		49D9AF8D1D92167B0095FB0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		49D9AF901D92167B0095FB0D /* WJQ_ApeTravel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WJQ_ApeTravel.xcdatamodel; sourceTree = "<group>"; };
+		49D9AF921D92167B0095FB0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49D9AF951D92167B0095FB0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		49D9AF971D92167B0095FB0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49D9AF9C1D92167B0095FB0D /* WJQ_ApeTravelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WJQ_ApeTravelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49D9AFA01D92167B0095FB0D /* WJQ_ApeTravelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJQ_ApeTravelTests.m; sourceTree = "<group>"; };
+		49D9AFA21D92167B0095FB0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49D9AFAC1D9217400095FB0D /* AboutMe.text */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = AboutMe.text; sourceTree = "<group>"; };
+		49D9AFC51D9218420095FB0D /* NSString+Regex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Regex.h"; sourceTree = "<group>"; };
+		49D9AFC61D9218420095FB0D /* NSString+Regex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Regex.m"; sourceTree = "<group>"; };
+		49D9AFC71D9218420095FB0D /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		49D9AFC81D9218420095FB0D /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		49D9AFCD1D9218560095FB0D /* AZBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZBaseController.h; sourceTree = "<group>"; };
+		49D9AFCE1D9218560095FB0D /* AZBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZBaseController.m; sourceTree = "<group>"; };
+		49D9AFD01D9218560095FB0D /* AZBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZBaseModel.h; sourceTree = "<group>"; };
+		49D9AFD11D9218560095FB0D /* AZBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZBaseModel.m; sourceTree = "<group>"; };
+		49D9AFD31D9218560095FB0D /* AZBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZBaseView.h; sourceTree = "<group>"; };
+		49D9AFD41D9218560095FB0D /* AZBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZBaseView.m; sourceTree = "<group>"; };
+		49D9AFDB1D921AB20095FB0D /* FootprintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FootprintViewController.h; sourceTree = "<group>"; };
+		49D9AFDC1D921AB20095FB0D /* FootprintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FootprintViewController.m; sourceTree = "<group>"; };
+		49D9AFDE1D921AC00095FB0D /* DiscountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscountViewController.h; sourceTree = "<group>"; };
+		49D9AFDF1D921AC00095FB0D /* DiscountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscountViewController.m; sourceTree = "<group>"; };
+		49D9AFE11D921ADA0095FB0D /* CommunityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunityViewController.h; sourceTree = "<group>"; };
+		49D9AFE21D921ADA0095FB0D /* CommunityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunityViewController.m; sourceTree = "<group>"; };
+		49D9AFE41D921AEC0095FB0D /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		49D9AFE51D921AEC0095FB0D /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		49D9AFE71D924C540095FB0D /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		49D9AFE81D924C540095FB0D /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		49D9AFEA1D9267DA0095FB0D /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
+		49D9AFEB1D9267DA0095FB0D /* HomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
+		49D9AFED1D926ED20095FB0D /* HomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeModel.h; sourceTree = "<group>"; };
+		49D9AFEE1D926ED20095FB0D /* HomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeModel.m; sourceTree = "<group>"; };
+		49D9AFF01D9274940095FB0D /* NSString+Categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Categories.h"; sourceTree = "<group>"; };
+		49D9AFF11D9274940095FB0D /* NSString+Categories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Categories.m"; sourceTree = "<group>"; };
+		49D9AFF31D9274CF0095FB0D /* UIImage+Categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Categories.h"; sourceTree = "<group>"; };
+		49D9AFF41D9274CF0095FB0D /* UIImage+Categories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Categories.m"; sourceTree = "<group>"; };
+		49D9AFF71D927AC90095FB0D /* SystemUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemUnit.h; sourceTree = "<group>"; };
+		49D9AFF91D92907C0095FB0D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		49F5CFA11D936C49006DA898 /* HomeTwoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTwoTableViewCell.h; sourceTree = "<group>"; };
+		49F5CFA21D936C49006DA898 /* HomeTwoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTwoTableViewCell.m; sourceTree = "<group>"; };
+		49F5CFA41D936DC5006DA898 /* HomeThreeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeThreeTableViewCell.h; sourceTree = "<group>"; };
+		49F5CFA51D936DC5006DA898 /* HomeThreeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeThreeTableViewCell.m; sourceTree = "<group>"; };
+		9CC999D789EC9FBFB7905A5D /* libPods-WJQ_ApeTravel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WJQ_ApeTravel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1A9E80651E993C07C33559A /* libPods-WJQ_ApeTravelTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WJQ_ApeTravelTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC7173349E36538D65D9B9E5 /* Pods-WJQ_ApeTravel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WJQ_ApeTravel.release.xcconfig"; path = "Pods/Target Support Files/Pods-WJQ_ApeTravel/Pods-WJQ_ApeTravel.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49D9AF7D1D92167B0095FB0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD3D6E32DDCC34E62666E2FD /* libPods-WJQ_ApeTravel.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49D9AF991D92167B0095FB0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F07AB8AF9B8964CF49CE542D /* libPods-WJQ_ApeTravelTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49D9AF771D92167B0095FB0D = {
+			isa = PBXGroup;
+			children = (
+				ECD94882E377880C321D5F75 /* Frameworks */,
+				877B3FAF80D5785A239BB481 /* Pods */,
+				49D9AF811D92167B0095FB0D /* Products */,
+				49D9AF821D92167B0095FB0D /* WJQ_ApeTravel */,
+				49D9AF9F1D92167B0095FB0D /* WJQ_ApeTravelTests */,
+			);
+			sourceTree = "<group>";
+		};
+		49D9AF811D92167B0095FB0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49D9AF801D92167B0095FB0D /* WJQ_ApeTravel.app */,
+				49D9AF9C1D92167B0095FB0D /* WJQ_ApeTravelTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49D9AF821D92167B0095FB0D /* WJQ_ApeTravel */ = {
+			isa = PBXGroup;
+			children = (
+				49D9AFCB1D9218560095FB0D /* Base */,
+				49D9AFC31D9218020095FB0D /* Common */,
+				49D9AFAE1D9217430095FB0D /* Modules */,
+				49D9AFAB1D92172D0095FB0D /* Resources */,
+				49D9AF831D92167B0095FB0D /* Supporting Files */,
+				49D9AF861D92167B0095FB0D /* AppDelegate.h */,
+				49D9AF871D92167B0095FB0D /* AppDelegate.m */,
+				49D9AF921D92167B0095FB0D /* Assets.xcassets */,
+				49D9AF971D92167B0095FB0D /* Info.plist */,
+				49D9AF941D92167B0095FB0D /* LaunchScreen.storyboard */,
+				49D9AF8C1D92167B0095FB0D /* Main.storyboard */,
+				49D9AF891D92167B0095FB0D /* ViewController.h */,
+				49D9AF8A1D92167B0095FB0D /* ViewController.m */,
+				49D9AF8F1D92167B0095FB0D /* WJQ_ApeTravel.xcdatamodeld */,
+			);
+			path = WJQ_ApeTravel;
+			sourceTree = "<group>";
+		};
+		49D9AF831D92167B0095FB0D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				49D9AF841D92167B0095FB0D /* main.m */,
+				49D9AFF91D92907C0095FB0D /* PrefixHeader.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49D9AF9F1D92167B0095FB0D /* WJQ_ApeTravelTests */ = {
+			isa = PBXGroup;
+			children = (
+				49D9AFA21D92167B0095FB0D /* Info.plist */,
+				49D9AFA01D92167B0095FB0D /* WJQ_ApeTravelTests.m */,
+			);
+			path = WJQ_ApeTravelTests;
+			sourceTree = "<group>";
+		};
+		49D9AFAB1D92172D0095FB0D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				49D9AFAC1D9217400095FB0D /* AboutMe.text */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		49D9AFAE1D9217430095FB0D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				49D9AFB31D9217740095FB0D /* Community */,
+				49D9AFB71D9217970095FB0D /* Discount */,
+				49D9AFBB1D9217C20095FB0D /* Footprint */,
+				49D9AFBF1D9217E20095FB0D /* Home */,
+				49D9AFAF1D9217570095FB0D /* Register */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		49D9AFAF1D9217570095FB0D /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				49D9AFB01D92175F0095FB0D /* Controller */,
+				49D9AFB21D9217640095FB0D /* Model */,
+				49D9AFB11D9217610095FB0D /* View */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		49D9AFB01D92175F0095FB0D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				49D9AFE41D921AEC0095FB0D /* RegisterViewController.h */,
+				49D9AFE51D921AEC0095FB0D /* RegisterViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		49D9AFB11D9217610095FB0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		49D9AFB21D9217640095FB0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		49D9AFB31D9217740095FB0D /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				49D9AFB41D9217870095FB0D /* Controller */,
+				49D9AFB61D92178C0095FB0D /* Model */,
+				49D9AFB51D92178A0095FB0D /* View */,
+			);
+			path = Community;
+			sourceTree = "<group>";
+		};
+		49D9AFB41D9217870095FB0D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				49D9AFE11D921ADA0095FB0D /* CommunityViewController.h */,
+				49D9AFE21D921ADA0095FB0D /* CommunityViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		49D9AFB51D92178A0095FB0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		49D9AFB61D92178C0095FB0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		49D9AFB71D9217970095FB0D /* Discount */ = {
+			isa = PBXGroup;
+			children = (
+				49D9AFB81D9217AD0095FB0D /* Controller */,
+				49D9AFBA1D9217B20095FB0D /* Model */,
+				49D9AFB91D9217B00095FB0D /* View */,
+			);
+			path = Discount;
+			sourceTree = "<group>";
+		};
+		49D9AFB81D9217AD0095FB0D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				49D9AFDE1D921AC00095FB0D /* DiscountViewController.h */,
+				49D9AFDF1D921AC00095FB0D /* DiscountViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		49D9AFB91D9217B00095FB0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		49D9AFBA1D9217B20095FB0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		49D9AFBB1D9217C20095FB0D /* Footprint */ = {
+			isa = PBXGroup;
+			children = (
+				49D9AFBC1D9217D30095FB0D /* Controller */,
+				49D9AFBE1D9217D70095FB0D /* Model */,
+				49D9AFBD1D9217D50095FB0D /* View */,
+			);
+			path = Footprint;
+			sourceTree = "<group>";
+		};
+		49D9AFBC1D9217D30095FB0D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				49D9AFDB1D921AB20095FB0D /* FootprintViewController.h */,
+				49D9AFDC1D921AB20095FB0D /* FootprintViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		49D9AFBD1D9217D50095FB0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		49D9AFBE1D9217D70095FB0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		49D9AFBF1D9217E20095FB0D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				49D9AFC01D9217EC0095FB0D /* Controller */,
+				49D9AFC21D9217F00095FB0D /* Model */,
+				49D9AFC11D9217EE0095FB0D /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		49D9AFC01D9217EC0095FB0D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				49D9AFE71D924C540095FB0D /* HomeViewController.h */,
+				49D9AFE81D924C540095FB0D /* HomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		49D9AFC11D9217EE0095FB0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				49D9AFEA1D9267DA0095FB0D /* HomeTableViewCell.h */,
+				49D9AFEB1D9267DA0095FB0D /* HomeTableViewCell.m */,
+				496BD9FB1D92C6260013E78A /* HomeOneTableViewCell.h */,
+				496BD9FC1D92C6260013E78A /* HomeOneTableViewCell.m */,
+				49F5CFA11D936C49006DA898 /* HomeTwoTableViewCell.h */,
+				49F5CFA21D936C49006DA898 /* HomeTwoTableViewCell.m */,
+				49F5CFA41D936DC5006DA898 /* HomeThreeTableViewCell.h */,
+				49F5CFA51D936DC5006DA898 /* HomeThreeTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		49D9AFC21D9217F00095FB0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				49D9AFED1D926ED20095FB0D /* HomeModel.h */,
+				49D9AFEE1D926ED20095FB0D /* HomeModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		49D9AFC31D9218020095FB0D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				49D9AFC41D9218420095FB0D /* Categories */,
+				49D9AFF61D927AB40095FB0D /* Util */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		49D9AFC41D9218420095FB0D /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				49D9AFF01D9274940095FB0D /* NSString+Categories.h */,
+				49D9AFF11D9274940095FB0D /* NSString+Categories.m */,
+				49D9AFC51D9218420095FB0D /* NSString+Regex.h */,
+				49D9AFC61D9218420095FB0D /* NSString+Regex.m */,
+				49D9AFF31D9274CF0095FB0D /* UIImage+Categories.h */,
+				49D9AFF41D9274CF0095FB0D /* UIImage+Categories.m */,
+				49D9AFC71D9218420095FB0D /* UIView+Frame.h */,
+				49D9AFC81D9218420095FB0D /* UIView+Frame.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		49D9AFCB1D9218560095FB0D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				49D9AFCC1D9218560095FB0D /* Controller */,
+				49D9AFCF1D9218560095FB0D /* Model */,
+				49D9AFD21D9218560095FB0D /* View */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		49D9AFCC1D9218560095FB0D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				49D9AFCD1D9218560095FB0D /* AZBaseController.h */,
+				49D9AFCE1D9218560095FB0D /* AZBaseController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		49D9AFCF1D9218560095FB0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				49D9AFD01D9218560095FB0D /* AZBaseModel.h */,
+				49D9AFD11D9218560095FB0D /* AZBaseModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		49D9AFD21D9218560095FB0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				49D9AFD31D9218560095FB0D /* AZBaseView.h */,
+				49D9AFD41D9218560095FB0D /* AZBaseView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		49D9AFF61D927AB40095FB0D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				49D9AFF71D927AC90095FB0D /* SystemUnit.h */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		877B3FAF80D5785A239BB481 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				337E83EC9341EEF2D0DC4B82 /* Pods-WJQ_ApeTravel.debug.xcconfig */,
+				DC7173349E36538D65D9B9E5 /* Pods-WJQ_ApeTravel.release.xcconfig */,
+				0A7BAD0048A38BA313E94CE9 /* Pods-WJQ_ApeTravelTests.debug.xcconfig */,
+				02382DD6916FA7BEC0DC808E /* Pods-WJQ_ApeTravelTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ECD94882E377880C321D5F75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CC999D789EC9FBFB7905A5D /* libPods-WJQ_ApeTravel.a */,
+				B1A9E80651E993C07C33559A /* libPods-WJQ_ApeTravelTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49D9AF7F1D92167B0095FB0D /* WJQ_ApeTravel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49D9AFA51D92167B0095FB0D /* Build configuration list for PBXNativeTarget "WJQ_ApeTravel" */;
+			buildPhases = (
+				B8C1C323694FF0BE0A44570F /* [CP] Check Pods Manifest.lock */,
+				49D9AF7C1D92167B0095FB0D /* Sources */,
+				49D9AF7D1D92167B0095FB0D /* Frameworks */,
+				49D9AF7E1D92167B0095FB0D /* Resources */,
+				D84BD1F9299DB2779996C34E /* [CP] Embed Pods Frameworks */,
+				2046567DD47FAEA0978C30E8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WJQ_ApeTravel;
+			productName = WJQ_ApeTravel;
+			productReference = 49D9AF801D92167B0095FB0D /* WJQ_ApeTravel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		49D9AF9B1D92167B0095FB0D /* WJQ_ApeTravelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49D9AFA81D92167B0095FB0D /* Build configuration list for PBXNativeTarget "WJQ_ApeTravelTests" */;
+			buildPhases = (
+				CC1C077D9A61838A42885E1D /* [CP] Check Pods Manifest.lock */,
+				49D9AF981D92167B0095FB0D /* Sources */,
+				49D9AF991D92167B0095FB0D /* Frameworks */,
+				49D9AF9A1D92167B0095FB0D /* Resources */,
+				EBA867A623589383F7D259C0 /* [CP] Embed Pods Frameworks */,
+				28C0FBE10AA507EE6B02D133 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49D9AF9E1D92167B0095FB0D /* PBXTargetDependency */,
+			);
+			name = WJQ_ApeTravelTests;
+			productName = WJQ_ApeTravelTests;
+			productReference = 49D9AF9C1D92167B0095FB0D /* WJQ_ApeTravelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49D9AF781D92167B0095FB0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Mars02400059;
+				TargetAttributes = {
+					49D9AF7F1D92167B0095FB0D = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					49D9AF9B1D92167B0095FB0D = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 49D9AF7F1D92167B0095FB0D;
+					};
+				};
+			};
+			buildConfigurationList = 49D9AF7B1D92167B0095FB0D /* Build configuration list for PBXProject "WJQ_ApeTravel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49D9AF771D92167B0095FB0D;
+			productRefGroup = 49D9AF811D92167B0095FB0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49D9AF7F1D92167B0095FB0D /* WJQ_ApeTravel */,
+				49D9AF9B1D92167B0095FB0D /* WJQ_ApeTravelTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49D9AF7E1D92167B0095FB0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49D9AF961D92167B0095FB0D /* LaunchScreen.storyboard in Resources */,
+				49D9AF931D92167B0095FB0D /* Assets.xcassets in Resources */,
+				49D9AF8E1D92167B0095FB0D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49D9AF9A1D92167B0095FB0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2046567DD47FAEA0978C30E8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WJQ_ApeTravel/Pods-WJQ_ApeTravel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28C0FBE10AA507EE6B02D133 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WJQ_ApeTravelTests/Pods-WJQ_ApeTravelTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8C1C323694FF0BE0A44570F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CC1C077D9A61838A42885E1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D84BD1F9299DB2779996C34E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WJQ_ApeTravel/Pods-WJQ_ApeTravel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBA867A623589383F7D259C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WJQ_ApeTravelTests/Pods-WJQ_ApeTravelTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49D9AF7C1D92167B0095FB0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49D9AF8B1D92167B0095FB0D /* ViewController.m in Sources */,
+				49F5CFA31D936C49006DA898 /* HomeTwoTableViewCell.m in Sources */,
+				49D9AFF21D9274940095FB0D /* NSString+Categories.m in Sources */,
+				49D9AFC91D9218420095FB0D /* NSString+Regex.m in Sources */,
+				49D9AFAD1D9217400095FB0D /* AboutMe.text in Sources */,
+				49D9AFDD1D921AB20095FB0D /* FootprintViewController.m in Sources */,
+				49D9AFCA1D9218420095FB0D /* UIView+Frame.m in Sources */,
+				49D9AFD61D9218560095FB0D /* AZBaseModel.m in Sources */,
+				49D9AF881D92167B0095FB0D /* AppDelegate.m in Sources */,
+				49D9AF851D92167B0095FB0D /* main.m in Sources */,
+				49D9AFE91D924C540095FB0D /* HomeViewController.m in Sources */,
+				49D9AF911D92167B0095FB0D /* WJQ_ApeTravel.xcdatamodeld in Sources */,
+				49D9AFEC1D9267DA0095FB0D /* HomeTableViewCell.m in Sources */,
+				49D9AFF51D9274CF0095FB0D /* UIImage+Categories.m in Sources */,
+				49D9AFE61D921AEC0095FB0D /* RegisterViewController.m in Sources */,
+				49D9AFE31D921ADA0095FB0D /* CommunityViewController.m in Sources */,
+				496BD9FD1D92C6260013E78A /* HomeOneTableViewCell.m in Sources */,
+				49F5CFA61D936DC5006DA898 /* HomeThreeTableViewCell.m in Sources */,
+				49D9AFD71D9218560095FB0D /* AZBaseView.m in Sources */,
+				49D9AFEF1D926ED20095FB0D /* HomeModel.m in Sources */,
+				49D9AFD51D9218560095FB0D /* AZBaseController.m in Sources */,
+				49D9AFE01D921AC00095FB0D /* DiscountViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49D9AF981D92167B0095FB0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49D9AFA11D92167B0095FB0D /* WJQ_ApeTravelTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49D9AF9E1D92167B0095FB0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49D9AF7F1D92167B0095FB0D /* WJQ_ApeTravel */;
+			targetProxy = 49D9AF9D1D92167B0095FB0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		49D9AF8C1D92167B0095FB0D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49D9AF8D1D92167B0095FB0D /* Base */,
+			);
+			name = Main.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+		49D9AF941D92167B0095FB0D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49D9AF951D92167B0095FB0D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49D9AFA31D92167B0095FB0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		49D9AFA41D92167B0095FB0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49D9AFA61D92167B0095FB0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 337E83EC9341EEF2D0DC4B82 /* Pods-WJQ_ApeTravel.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WJQ_ApeTravel/Supporting Files/PrefixHeader.pch";
+				INFOPLIST_FILE = WJQ_ApeTravel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wangjiaoqi.WJQ-ApeTravel";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		49D9AFA71D92167B0095FB0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC7173349E36538D65D9B9E5 /* Pods-WJQ_ApeTravel.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WJQ_ApeTravel/Supporting Files/PrefixHeader.pch";
+				INFOPLIST_FILE = WJQ_ApeTravel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wangjiaoqi.WJQ-ApeTravel";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		49D9AFA91D92167B0095FB0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A7BAD0048A38BA313E94CE9 /* Pods-WJQ_ApeTravelTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WJQ_ApeTravelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wangjiaoqi.WJQ-ApeTravelTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WJQ_ApeTravel.app/WJQ_ApeTravel";
+			};
+			name = Debug;
+		};
+		49D9AFAA1D92167B0095FB0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02382DD6916FA7BEC0DC808E /* Pods-WJQ_ApeTravelTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WJQ_ApeTravelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wangjiaoqi.WJQ-ApeTravelTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WJQ_ApeTravel.app/WJQ_ApeTravel";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49D9AF7B1D92167B0095FB0D /* Build configuration list for PBXProject "WJQ_ApeTravel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49D9AFA31D92167B0095FB0D /* Debug */,
+				49D9AFA41D92167B0095FB0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49D9AFA51D92167B0095FB0D /* Build configuration list for PBXNativeTarget "WJQ_ApeTravel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49D9AFA61D92167B0095FB0D /* Debug */,
+				49D9AFA71D92167B0095FB0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49D9AFA81D92167B0095FB0D /* Build configuration list for PBXNativeTarget "WJQ_ApeTravelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49D9AFA91D92167B0095FB0D /* Debug */,
+				49D9AFAA1D92167B0095FB0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		49D9AF8F1D92167B0095FB0D /* WJQ_ApeTravel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				49D9AF901D92167B0095FB0D /* WJQ_ApeTravel.xcdatamodel */,
+			);
+			currentVersion = 49D9AF901D92167B0095FB0D /* WJQ_ApeTravel.xcdatamodel */;
+			path = WJQ_ApeTravel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 49D9AF781D92167B0095FB0D /* Project object */;
+}
