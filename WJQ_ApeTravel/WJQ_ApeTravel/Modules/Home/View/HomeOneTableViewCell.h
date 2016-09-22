@@ -10,6 +10,6 @@
 @class HomeModel;
 @interface HomeOneTableViewCell : UITableViewCell
 
-@property (nonatomic, retain) HomeModel *homeModel;
+@property (nonatomic, strong) HomeModel *homeModel;
 
 @end

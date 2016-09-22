@@ -10,6 +10,6 @@
 
 @interface SubitemsCollectionViewCell : UICollectionViewCell
 
-@property (nonatomic, retain) NSDictionary *subitemsDic;
+@property (nonatomic, strong) NSDictionary *subitemsDic;
 
 @end

@@ -11,11 +11,11 @@
 
 @interface HomeTableViewCell ()
 
-@property (nonatomic, retain) UIImageView *coverImageView;
-@property (nonatomic, retain) UILabel *columnLabel;
-@property (nonatomic, retain) UILabel *titleLabel;
-@property (nonatomic, retain) UILabel *subjectLabel;
-@property (nonatomic, retain) UIImageView *icon_urlImageView;
+@property (nonatomic, strong) UIImageView *coverImageView;
+@property (nonatomic, strong) UILabel *columnLabel;
+@property (nonatomic, strong) UILabel *titleLabel;
+@property (nonatomic, strong) UILabel *subjectLabel;
+@property (nonatomic, strong) UIImageView *icon_urlImageView;
 
 
 @end

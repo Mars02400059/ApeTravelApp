@@ -25,9 +25,9 @@
 /// cell种类
 @property (nonatomic, assign) NSInteger type;
 /// 装作者头像与名字
-@property (nonatomic, retain) NSDictionary *author;
+@property (nonatomic, strong) NSDictionary *author;
 /// 第四种Cell要用的数组
-@property (nonatomic, retain) NSArray *subitems;
+@property (nonatomic, strong) NSArray *subitems;
 
 
 @end

@@ -18,14 +18,14 @@ UICollectionViewDataSource
 >
 
 
-@property (nonatomic, retain) UILabel *columnLabel;
-@property (nonatomic, retain) UILabel *titleLabel;
-@property (nonatomic, retain) UILabel *subjectLabel;
-@property (nonatomic, retain) UICollectionView *subitemsCollectionView;
-@property (nonatomic, retain) UIImageView *icon_urlImageView;
+@property (nonatomic, strong) UILabel *columnLabel;
+@property (nonatomic, strong) UILabel *titleLabel;
+@property (nonatomic, strong) UILabel *subjectLabel;
+@property (nonatomic, strong) UICollectionView *subitemsCollectionView;
+@property (nonatomic, strong) UIImageView *icon_urlImageView;
 
 /// 滑动视图存数据数组
-@property (nonatomic, retain) NSMutableArray *subitemsArray;
+@property (nonatomic, strong) NSMutableArray *subitemsArray;
 
 @end
 

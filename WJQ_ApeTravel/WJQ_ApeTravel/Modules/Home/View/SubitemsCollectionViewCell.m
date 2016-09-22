@@ -10,11 +10,11 @@
 
 @interface SubitemsCollectionViewCell ()
 
-@property (nonatomic, retain) UIImageView *item_coverImageView;
+@property (nonatomic, strong) UIImageView *item_coverImageView;
 
-@property (nonatomic, retain) UILabel *item_nameLabel;
+@property (nonatomic, strong) UILabel *item_nameLabel;
 
-@property (nonatomic, retain) UILabel *item_addressLabel;
+@property (nonatomic, strong) UILabel *item_addressLabel;
 
 @end
 

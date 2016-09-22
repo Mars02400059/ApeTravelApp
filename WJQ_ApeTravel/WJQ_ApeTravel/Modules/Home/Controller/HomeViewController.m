@@ -21,7 +21,7 @@
 UITableViewDelegate,
 UITableViewDataSource
 >
-@property (nonatomic, retain) NSMutableArray *tableViewArray;
+@property (nonatomic, strong) NSMutableArray *tableViewArray;
 
 @end
 

@@ -11,15 +11,15 @@
 
 @interface HomeOneTableViewCell ()
 
-@property (nonatomic, retain) UIImageView *coverImageView;
+@property (nonatomic, strong) UIImageView *coverImageView;
 /// 作者图片
-@property (nonatomic, retain) UIImageView *picImageView;
+@property (nonatomic, strong) UIImageView *picImageView;
 /// 作者名字
-@property (nonatomic, retain) UILabel *usernameLabel;
-@property (nonatomic, retain) UILabel *columnLabel;
-@property (nonatomic, retain) UILabel *titleLabel;
-@property (nonatomic, retain) UILabel *subjectLabel;
-@property (nonatomic, retain) UIImageView *icon_urlImageView;
+@property (nonatomic, strong) UILabel *usernameLabel;
+@property (nonatomic, strong) UILabel *columnLabel;
+@property (nonatomic, strong) UILabel *titleLabel;
+@property (nonatomic, strong) UILabel *subjectLabel;
+@property (nonatomic, strong) UIImageView *icon_urlImageView;
 
 @end
 
