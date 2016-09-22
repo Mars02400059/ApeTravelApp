@@ -33,6 +33,7 @@
 		49D9AFF51D9274CF0095FB0D /* UIImage+Categories.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D9AFF41D9274CF0095FB0D /* UIImage+Categories.m */; };
 		49F5CFA31D936C49006DA898 /* HomeTwoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F5CFA21D936C49006DA898 /* HomeTwoTableViewCell.m */; };
 		49F5CFA61D936DC5006DA898 /* HomeThreeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F5CFA51D936DC5006DA898 /* HomeThreeTableViewCell.m */; };
+		49F5CFA91D938033006DA898 /* SubitemsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F5CFA81D938033006DA898 /* SubitemsCollectionViewCell.m */; };
 		BD3D6E32DDCC34E62666E2FD /* libPods-WJQ_ApeTravel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CC999D789EC9FBFB7905A5D /* libPods-WJQ_ApeTravel.a */; };
 		F07AB8AF9B8964CF49CE542D /* libPods-WJQ_ApeTravelTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1A9E80651E993C07C33559A /* libPods-WJQ_ApeTravelTests.a */; };
 /* End PBXBuildFile section */
@@ -102,6 +103,8 @@
 		49F5CFA21D936C49006DA898 /* HomeTwoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTwoTableViewCell.m; sourceTree = "<group>"; };
 		49F5CFA41D936DC5006DA898 /* HomeThreeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeThreeTableViewCell.h; sourceTree = "<group>"; };
 		49F5CFA51D936DC5006DA898 /* HomeThreeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeThreeTableViewCell.m; sourceTree = "<group>"; };
+		49F5CFA71D938033006DA898 /* SubitemsCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubitemsCollectionViewCell.h; sourceTree = "<group>"; };
+		49F5CFA81D938033006DA898 /* SubitemsCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubitemsCollectionViewCell.m; sourceTree = "<group>"; };
 		9CC999D789EC9FBFB7905A5D /* libPods-WJQ_ApeTravel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WJQ_ApeTravel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1A9E80651E993C07C33559A /* libPods-WJQ_ApeTravelTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WJQ_ApeTravelTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC7173349E36538D65D9B9E5 /* Pods-WJQ_ApeTravel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WJQ_ApeTravel.release.xcconfig"; path = "Pods/Target Support Files/Pods-WJQ_ApeTravel/Pods-WJQ_ApeTravel.release.xcconfig"; sourceTree = "<group>"; };
@@ -368,6 +371,8 @@
 				49F5CFA21D936C49006DA898 /* HomeTwoTableViewCell.m */,
 				49F5CFA41D936DC5006DA898 /* HomeThreeTableViewCell.h */,
 				49F5CFA51D936DC5006DA898 /* HomeThreeTableViewCell.m */,
+				49F5CFA71D938033006DA898 /* SubitemsCollectionViewCell.h */,
+				49F5CFA81D938033006DA898 /* SubitemsCollectionViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -671,6 +676,7 @@
 			files = (
 				49D9AF8B1D92167B0095FB0D /* ViewController.m in Sources */,
 				49F5CFA31D936C49006DA898 /* HomeTwoTableViewCell.m in Sources */,
+				49F5CFA91D938033006DA898 /* SubitemsCollectionViewCell.m in Sources */,
 				49D9AFF21D9274940095FB0D /* NSString+Categories.m in Sources */,
 				49D9AFC91D9218420095FB0D /* NSString+Regex.m in Sources */,
 				49D9AFAD1D9217400095FB0D /* AboutMe.text in Sources */,

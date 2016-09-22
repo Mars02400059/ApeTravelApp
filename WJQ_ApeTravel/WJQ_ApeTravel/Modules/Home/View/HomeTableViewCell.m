@@ -107,7 +107,7 @@
 //    _authorImageView.layer.cornerRadius = 25.f;
     
     
-    _columnLabel.frame = CGRectMake(0, 25, 70, 25);
+    _columnLabel.frame = CGRectMake(0, 25, 80, 25);
     
     _titleLabel.frame = CGRectMake(0, 0, width - 100, 60);
 

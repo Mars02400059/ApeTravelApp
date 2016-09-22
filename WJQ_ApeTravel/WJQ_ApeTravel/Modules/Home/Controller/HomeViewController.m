@@ -10,6 +10,8 @@
 #import "HomeTableViewCell.h"
 #import "HomeModel.h"
 #import "HomeOneTableViewCell.h"
+#import "HomeTwoTableViewCell.h"
+#import "HomeThreeTableViewCell.h"
 
 
 static NSString *const cellIndetofier = @"cell";
@@ -36,12 +38,16 @@ UITableViewDataSource
 - (void)createSubView {
 
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 64 - 50) style:UITableViewStylePlain];
+    tableView.showsVerticalScrollIndicator = NO;
     tableView.delegate = self;
     tableView.dataSource = self;
 #warning 高度需要自适应
-//    tableView.rowHeight = 370;
+    /// 第一种高度
+    tableView.rowHeight = 370;
     /// 第二种高度
     tableView.rowHeight = 380;
+    /// 第四种高度
+    tableView.rowHeight = 420;
     [self.view addSubview:tableView];
     self.tableViewArray = [NSMutableArray array];
     // 网络请求 + 解析数据
@@ -74,10 +80,9 @@ UITableViewDataSource
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     HomeModel *homeModel = _tableViewArray[indexPath.row];
     
-    
-    HomeOneTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIndetofier];
+    HomeThreeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIndetofier];
     if (nil == cell) {
-        cell = [[HomeOneTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIndetofier];
+        cell = [[HomeThreeTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIndetofier];
     }
     cell.homeModel = homeModel;
     
@@ -85,22 +90,43 @@ UITableViewDataSource
     
     return cell;
     
-//    if (1 == homeModel.type && 0 == homeModel.author.count) {
-//        HomeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIndetofier];
-//        if (nil == cell) {
-//            cell = [[HomeTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIndetofier];
-//        }
-//        cell.homeModel = homeModel;
-//        return cell;
-//    } else {
-//        HomeOneTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIndetofier];
-//        if (nil == cell) {
-//            cell = [[HomeOneTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIndetofier];
-//        }
-//        cell.homeModel = homeModel;
-//        return cell;
-//    }
-//    
+#if 0
+    if (1 == homeModel.type) {
+        HomeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIndetofier];
+        if (nil == cell) {
+            cell = [[HomeTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIndetofier];
+        }
+        cell.homeModel = homeModel;
+        return cell;
+    } else if (2 == homeModel.type) {
+        
+        HomeTwoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIndetofier];
+        if (nil == cell) {
+            cell = [[HomeTwoTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIndetofier];
+        }
+        cell.homeModel = homeModel;
+        return cell;
+    } else if (3 == homeModel.type) {
+        HomeThreeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIndetofier];
+        if (nil == cell) {
+            cell = [[HomeThreeTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIndetofier];
+        }
+        cell.homeModel = homeModel;
+        
+        NSLog(@"%@", homeModel.author);
+        
+        return cell;
+    }  else {
+        HomeOneTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIndetofier];
+        if (nil == cell) {
+            cell = [[HomeOneTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIndetofier];
+        }
+        cell.homeModel = homeModel;
+        return cell;
+    }
+    
+#endif
+    
 }
 
 - (void)didReceiveMemoryWarning {

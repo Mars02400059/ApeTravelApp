@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class HomeModel;
 @interface HomeTwoTableViewCell : UITableViewCell
+
+@property (nonatomic, retain) HomeModel *homeModel;
 
 @end

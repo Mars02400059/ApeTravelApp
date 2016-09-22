@@ -117,7 +117,7 @@
 #warning 图片尺寸需对应实际效果进行设置
     
     _coverImageView.frame = CGRectMake(0, 0, width, width / 2 - 30);
-    _columnLabel.frame = CGRectMake(0, 25, 70, 25);
+    _columnLabel.frame = CGRectMake(0, 25, 80, 25);
     
     _picImageView.center = CGPointMake(width / 2, width / 2 - 30);
     _picImageView.width = 50.f;
