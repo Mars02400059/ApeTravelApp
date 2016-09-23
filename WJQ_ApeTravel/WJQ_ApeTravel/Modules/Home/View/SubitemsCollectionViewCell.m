@@ -10,6 +10,8 @@
 
 @interface SubitemsCollectionViewCell ()
 
+
+
 @property (nonatomic, strong) UIImageView *item_coverImageView;
 
 @property (nonatomic, strong) UILabel *item_nameLabel;
@@ -24,18 +26,27 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+        self.contentView.layer.borderColor = [UIColor colorWithWhite:0.793 alpha:1.000].CGColor;
+        [self.contentView.layer setBorderWidth:1.0f];
+        self.contentView.layer.cornerRadius = 3.f;
+        self.contentView.clipsToBounds = YES;
+        
         [self createSubView];
     }
     return self;
 }
 // 子视图
 - (void)createSubView {
+    
+
+    
     self.item_coverImageView = [UIImageView new];
     _item_coverImageView.backgroundColor = [UIColor yellowColor];
     [self.contentView addSubview:_item_coverImageView];
     
     self.item_nameLabel = [UILabel new];
     _item_nameLabel.font = [UIFont systemFontOfSize:15.f];
+    _item_nameLabel.numberOfLines = 0;
     [self.contentView addSubview:_item_nameLabel];
     
     self.item_addressLabel = [UILabel new];
@@ -60,7 +71,7 @@
     CGFloat width = self.contentView.bounds.size.width;
     _item_coverImageView.frame = CGRectMake(0, 0, width, 100);
     
-    _item_nameLabel.frame = CGRectMake(5, 110, 120, 30);
+    _item_nameLabel.frame = CGRectMake(5, 110, width - 5 - 10, 50);
     
     _item_addressLabel.frame = CGRectMake(20, 150, width - 40, 30);
 }

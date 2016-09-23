@@ -11,6 +11,8 @@
 
 @interface HomeTableViewCell ()
 
+/// 占位, 供观赏
+@property (nonatomic, strong) UIView *view;
 @property (nonatomic, strong) UIImageView *coverImageView;
 @property (nonatomic, strong) UILabel *columnLabel;
 @property (nonatomic, strong) UILabel *titleLabel;
@@ -27,6 +29,7 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
+        
         // 添加子视图
         [self createSubView];
     }
@@ -34,6 +37,10 @@
 }
 
 - (void)createSubView {
+    
+    self.view = [UIView new];
+    _view.backgroundColor = [UIColor colorWithRed:0.93 green:0.93 blue:0.93 alpha:1.000];
+    [self.contentView addSubview:_view];
     
     // 新闻图片
     self.coverImageView = [UIImageView new];
@@ -96,19 +103,22 @@
     [super layoutSubviews];
     CGFloat width = self.contentView.bounds.size.width;
 #warning 图片尺寸需对应实际效果进行设置
-
-    _coverImageView.frame = CGRectMake(0, 0, width, width / 2 - 30);
-    _columnLabel.frame = CGRectMake(0, 25, 90, 25);
+    
+    CGFloat viewHeight = 15.f;
+    _view.frame = CGRectMake(0, 0, width, viewHeight);
+    
+    _coverImageView.frame = CGRectMake(0, viewHeight, width, width / 2 - 30);
+    _columnLabel.frame = CGRectMake(0, 25 + viewHeight, 90, 25);
     
     _titleLabel.frame = CGRectMake(0, 0, width - 100, 60);
 
-    _titleLabel.center = CGPointMake(width / 2, width / 2 + 10);
+    _titleLabel.center = CGPointMake(width / 2, width / 2 + 5 + viewHeight / 2);
     
 #warning 文字自适应高度
     _subjectLabel.frame = CGRectMake(0, 0, width - 50, 50);
-    _subjectLabel.center = CGPointMake(width / 2, width / 2 + 60);
-    _icon_urlImageView.frame = CGRectMake(0, 0, 35, 35);
-    _icon_urlImageView.center = CGPointMake(width / 2, width / 2 + 120);
+    _subjectLabel.center = CGPointMake(width / 2, width / 2 + 60 + viewHeight / 2);
+    _icon_urlImageView.frame = CGRectMake(0, 0, 35, 25 + viewHeight / 2);
+    _icon_urlImageView.center = CGPointMake(width / 2, width / 2 + 120 + viewHeight / 2);
 
     
 }

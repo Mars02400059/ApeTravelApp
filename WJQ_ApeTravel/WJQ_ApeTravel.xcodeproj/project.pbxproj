@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49252C4E1D93E1610068B48E /* HomeSlideModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 49252C4D1D93E1610068B48E /* HomeSlideModel.m */; };
+		49252C511D93E2430068B48E /* SlideCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49252C501D93E2430068B48E /* SlideCollectionViewCell.m */; };
+		49252C541D9405E20068B48E /* CommendView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49252C531D9405E20068B48E /* CommendView.m */; };
+		49252C571D940CBB0068B48E /* TabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49252C561D940CBB0068B48E /* TabView.m */; };
 		496BD9FD1D92C6260013E78A /* HomeOneTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 496BD9FC1D92C6260013E78A /* HomeOneTableViewCell.m */; };
 		49D9AF851D92167B0095FB0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D9AF841D92167B0095FB0D /* main.m */; };
 		49D9AF881D92167B0095FB0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D9AF871D92167B0095FB0D /* AppDelegate.m */; };
@@ -52,6 +56,14 @@
 		02382DD6916FA7BEC0DC808E /* Pods-WJQ_ApeTravelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WJQ_ApeTravelTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WJQ_ApeTravelTests/Pods-WJQ_ApeTravelTests.release.xcconfig"; sourceTree = "<group>"; };
 		0A7BAD0048A38BA313E94CE9 /* Pods-WJQ_ApeTravelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WJQ_ApeTravelTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WJQ_ApeTravelTests/Pods-WJQ_ApeTravelTests.debug.xcconfig"; sourceTree = "<group>"; };
 		337E83EC9341EEF2D0DC4B82 /* Pods-WJQ_ApeTravel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WJQ_ApeTravel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WJQ_ApeTravel/Pods-WJQ_ApeTravel.debug.xcconfig"; sourceTree = "<group>"; };
+		49252C4C1D93E1610068B48E /* HomeSlideModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeSlideModel.h; sourceTree = "<group>"; };
+		49252C4D1D93E1610068B48E /* HomeSlideModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeSlideModel.m; sourceTree = "<group>"; };
+		49252C4F1D93E2430068B48E /* SlideCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideCollectionViewCell.h; sourceTree = "<group>"; };
+		49252C501D93E2430068B48E /* SlideCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideCollectionViewCell.m; sourceTree = "<group>"; };
+		49252C521D9405E20068B48E /* CommendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommendView.h; sourceTree = "<group>"; };
+		49252C531D9405E20068B48E /* CommendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommendView.m; sourceTree = "<group>"; };
+		49252C551D940CBB0068B48E /* TabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabView.h; sourceTree = "<group>"; };
+		49252C561D940CBB0068B48E /* TabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabView.m; sourceTree = "<group>"; };
 		496BD9FB1D92C6260013E78A /* HomeOneTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeOneTableViewCell.h; sourceTree = "<group>"; };
 		496BD9FC1D92C6260013E78A /* HomeOneTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeOneTableViewCell.m; sourceTree = "<group>"; };
 		49D9AF801D92167B0095FB0D /* WJQ_ApeTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WJQ_ApeTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -373,6 +385,12 @@
 				49F5CFA51D936DC5006DA898 /* HomeThreeTableViewCell.m */,
 				49F5CFA71D938033006DA898 /* SubitemsCollectionViewCell.h */,
 				49F5CFA81D938033006DA898 /* SubitemsCollectionViewCell.m */,
+				49252C4F1D93E2430068B48E /* SlideCollectionViewCell.h */,
+				49252C501D93E2430068B48E /* SlideCollectionViewCell.m */,
+				49252C521D9405E20068B48E /* CommendView.h */,
+				49252C531D9405E20068B48E /* CommendView.m */,
+				49252C551D940CBB0068B48E /* TabView.h */,
+				49252C561D940CBB0068B48E /* TabView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -382,6 +400,8 @@
 			children = (
 				49D9AFED1D926ED20095FB0D /* HomeModel.h */,
 				49D9AFEE1D926ED20095FB0D /* HomeModel.m */,
+				49252C4C1D93E1610068B48E /* HomeSlideModel.h */,
+				49252C4D1D93E1610068B48E /* HomeSlideModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -682,12 +702,15 @@
 				49D9AFAD1D9217400095FB0D /* AboutMe.text in Sources */,
 				49D9AFDD1D921AB20095FB0D /* FootprintViewController.m in Sources */,
 				49D9AFCA1D9218420095FB0D /* UIView+Frame.m in Sources */,
+				49252C541D9405E20068B48E /* CommendView.m in Sources */,
 				49D9AFD61D9218560095FB0D /* AZBaseModel.m in Sources */,
 				49D9AF881D92167B0095FB0D /* AppDelegate.m in Sources */,
 				49D9AF851D92167B0095FB0D /* main.m in Sources */,
+				49252C511D93E2430068B48E /* SlideCollectionViewCell.m in Sources */,
 				49D9AFE91D924C540095FB0D /* HomeViewController.m in Sources */,
 				49D9AF911D92167B0095FB0D /* WJQ_ApeTravel.xcdatamodeld in Sources */,
 				49D9AFEC1D9267DA0095FB0D /* HomeTableViewCell.m in Sources */,
+				49252C4E1D93E1610068B48E /* HomeSlideModel.m in Sources */,
 				49D9AFF51D9274CF0095FB0D /* UIImage+Categories.m in Sources */,
 				49D9AFE61D921AEC0095FB0D /* RegisterViewController.m in Sources */,
 				49D9AFE31D921ADA0095FB0D /* CommunityViewController.m in Sources */,
@@ -695,6 +718,7 @@
 				49F5CFA61D936DC5006DA898 /* HomeThreeTableViewCell.m in Sources */,
 				49D9AFD71D9218560095FB0D /* AZBaseView.m in Sources */,
 				49D9AFEF1D926ED20095FB0D /* HomeModel.m in Sources */,
+				49252C571D940CBB0068B48E /* TabView.m in Sources */,
 				49D9AFD51D9218560095FB0D /* AZBaseController.m in Sources */,
 				49D9AFE01D921AC00095FB0D /* DiscountViewController.m in Sources */,
 			);

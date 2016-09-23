@@ -17,6 +17,8 @@ UICollectionViewDelegate,
 UICollectionViewDataSource
 >
 
+/// 占位, 供观赏
+@property (nonatomic, strong) UIView *view;
 
 @property (nonatomic, strong) UILabel *columnLabel;
 @property (nonatomic, strong) UILabel *titleLabel;
@@ -42,6 +44,10 @@ UICollectionViewDataSource
 
 - (void)createSubView {
   
+    self.view = [UIView new];
+    _view.backgroundColor = [UIColor colorWithRed:0.93 green:0.93 blue:0.93 alpha:1.000];
+    [self.contentView addSubview:_view];
+    
     // 新闻类型
     self.columnLabel = [UILabel new];
     _columnLabel.font = [UIFont systemFontOfSize:14.f];
@@ -140,20 +146,22 @@ UICollectionViewDataSource
     [super layoutSubviews];
     CGFloat width = self.contentView.bounds.size.width;
     //    CGFloat height = self.contentView.bounds.size.height;
-
-    _columnLabel.frame = CGRectMake(0, 20, 90, 25);
+    CGFloat viewHeight = 15.f;
+    _view.frame = CGRectMake(0, 0, width, viewHeight);
+    _columnLabel.frame = CGRectMake(0, 20 + viewHeight, 90, 25);
     
     _titleLabel.frame = CGRectMake(0, 0, width - 90, 50);
-    _titleLabel.center = CGPointMake(width / 2, 75);
+    _titleLabel.center = CGPointMake(width / 2, 75 + viewHeight / 2);
 
     _subjectLabel.frame = CGRectMake(0, 0, width - 40, 50);
-    _subjectLabel.center = CGPointMake(width / 2, 130);
+    _subjectLabel.center = CGPointMake(width / 2, 130 + viewHeight / 2);
     
-    _subitemsCollectionView.frame = CGRectMake(0, 160, width, 180);
-    _subitemsCollectionView.contentSize = CGSizeMake(_subitemsCollectionView.bounds.size.width * 2, 0);
+    _subitemsCollectionView.frame = CGRectMake(10, 180, width - 10 * 2, 180);
+//    _subitemsCollectionView.frame = CGRectMake(0, 160, width, 180);
+//    _subitemsCollectionView.contentSize = CGSizeMake(_subitemsCollectionView.bounds.size.width * 2, 0);
     
     _icon_urlImageView.frame = CGRectMake(0, 0, 35, 35);
-    _icon_urlImageView.center = CGPointMake(width / 2, 380);
+    _icon_urlImageView.center = CGPointMake(width / 2, 380 + viewHeight / 2);
     
 }
 

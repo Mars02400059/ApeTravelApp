@@ -11,6 +11,9 @@
 
 @interface HomeOneTableViewCell ()
 
+/// 占位, 供观赏
+@property (nonatomic, strong) UIView *view;
+
 @property (nonatomic, strong) UIImageView *coverImageView;
 /// 作者图片
 @property (nonatomic, strong) UIImageView *picImageView;
@@ -28,6 +31,8 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
+        
+//        self.contentView.backgroundColor = [UIColor colorWithRed:0.407 green:0.987 blue:0.582 alpha:1.000];
         // 添加子视图
         [self createSubView];
     }
@@ -35,6 +40,10 @@
 }
 
 - (void)createSubView {
+    
+    self.view = [UIView new];
+    _view.backgroundColor = [UIColor colorWithRed:0.93 green:0.93 blue:0.93 alpha:1.000];
+    [self.contentView addSubview:_view];
     
     // 新闻图片
     self.coverImageView = [UIImageView new];
@@ -50,6 +59,8 @@
     
     // 作者头像
     self.picImageView = [UIImageView new];
+    _picImageView.layer.borderColor = [UIColor whiteColor].CGColor;
+    [_picImageView.layer setBorderWidth:1.5f];
     _picImageView.backgroundColor = [UIColor redColor];
     
     // 图片适应尺寸
@@ -115,27 +126,30 @@
     //    CGFloat height = self.contentView.bounds.size.height;
 #warning 图片尺寸需对应实际效果进行设置
     
-    _coverImageView.frame = CGRectMake(0, 0, width, width / 2 - 30);
-    _columnLabel.frame = CGRectMake(0, 25, 90, 25);
+    CGFloat viewHeight = 15.f;
+    _view.frame = CGRectMake(0, 0, width, viewHeight);
     
-    _picImageView.center = CGPointMake(width / 2, width / 2 - 30);
+    _coverImageView.frame = CGRectMake(0, viewHeight, width, width / 2 - 30);
+    _columnLabel.frame = CGRectMake(0, 25 + viewHeight, 90, 25);
+    
+    _picImageView.center = CGPointMake(width / 2, width / 2 - 30 + viewHeight / 2);
     _picImageView.width = 50.f;
     _picImageView.height = 50.f;
     
     
     _usernameLabel.width = 70.f;
     _usernameLabel.height = 20.f;
-    _usernameLabel.center = CGPointMake(width / 2, width / 2 + 10);
+    _usernameLabel.center = CGPointMake(width / 2, width / 2 + 10 + viewHeight / 2);
 
-    _titleLabel.frame = CGRectMake(0, 0, width - 100, 60);
-    _titleLabel.center = CGPointMake(width / 2, width / 2 + 45);
+    _titleLabel.frame = CGRectMake(0, viewHeight, width - 100, 60);
+    _titleLabel.center = CGPointMake(width / 2, width / 2 + 45 + viewHeight / 2);
     
 #warning 文字自适应高度
     _subjectLabel.frame = CGRectMake(0, 0, width - 50, 50);
-    _subjectLabel.center = CGPointMake(width / 2, width / 2 + 95);
+    _subjectLabel.center = CGPointMake(width / 2, width / 2 + 95 + viewHeight / 2);
     
     _icon_urlImageView.frame = CGRectMake(0, 0, 35, 35);
-    _icon_urlImageView.center = CGPointMake(width / 2, width / 2 + 155);
+    _icon_urlImageView.center = CGPointMake(width / 2, width / 2 + 155 + viewHeight / 2);
     
 }
 
