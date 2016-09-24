@@ -46,6 +46,9 @@
     [self.contentView addSubview:_coverImageView];
     // 播放按钮
     self.hahaImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"播放按钮"]];
+    _hahaImageView.layer.cornerRadius = 25.f;
+    _hahaImageView.alpha = 0.95f;
+    _hahaImageView.backgroundColor = [UIColor whiteColor];
     [_coverImageView addSubview:_hahaImageView];
     
     // 新闻类型
@@ -103,9 +106,10 @@
     _view.frame = CGRectMake(0, 0, width, viewHeight);
     
     _coverImageView.frame = CGRectMake(0, viewHeight, width, width / 2 - 30);
-    _hahaImageView.width = 45.f;
-    _hahaImageView.height = 45.f;
-    _hahaImageView.center = _coverImageView.center;
+    
+    _hahaImageView.width = 50.f;
+    _hahaImageView.height = 50.f;
+    _hahaImageView.center = CGPointMake(_coverImageView.width / 2, _coverImageView.height / 2);
     
     _columnLabel.frame = CGRectMake(0, 25 + viewHeight, 90, 25);
     

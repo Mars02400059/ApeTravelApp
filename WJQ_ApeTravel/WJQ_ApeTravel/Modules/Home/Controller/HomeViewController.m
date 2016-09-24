@@ -30,7 +30,8 @@ UICollectionViewDataSource
 @property (nonatomic, strong) UICollectionView *collectionView;
 
 @property (nonatomic, strong) UIPageControl *pageControl;
-
+// 定时器
+@property (nonatomic, strong) NSTimer *timer;
 @property (nonatomic, strong) NSMutableArray *collectionViewArray;
 
 
@@ -40,7 +41,8 @@ UICollectionViewDataSource
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationController.navigationBar.hidden = YES;
+    /// 在视图将要出现时写navigationBar状态
+//    self.navigationController.navigationBar.hidden = NO;
     [self createSubView];
     
     
@@ -59,6 +61,7 @@ UICollectionViewDataSource
     [self createSlideView];
     
     self.tableViewArray = [NSMutableArray array];
+    
     // 网络请求 + 解析数据
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     NSString *url = @"http://open.qyer.com/qyer/home/home_feed?client_id=qyer_android&client_secret=9fcaae8aefc4f9ac4915&v=1&track_deviceid=A1000052A2BCDD&track_app_version=7.0.2&track_app_channel=baidu&track_device_info=PD1524B&track_os=Android5.1&app_installtime=1474192132493&page=1";
@@ -106,7 +109,7 @@ UICollectionViewDataSource
     flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
 #pragma mark - 轮播图
     self.collectionViewArray = [NSMutableArray array];
-    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, headerView.bounds.size.width, headerView.bounds.size.width / 2) collectionViewLayout:flowLayout];
+    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, headerView.width, headerView.width / 2) collectionViewLayout:flowLayout];
     _collectionView.showsVerticalScrollIndicator = NO;
     _collectionView.showsHorizontalScrollIndicator = NO;
     _collectionView.pagingEnabled = YES;
@@ -115,18 +118,23 @@ UICollectionViewDataSource
     _collectionView.backgroundColor = [UIColor redColor];
     [headerView addSubview:_collectionView];
     [_collectionView registerClass:[SlideCollectionViewCell class] forCellWithReuseIdentifier:collectionCell];
-    self.pageControl = [[UIPageControl alloc] init];
-    _pageControl.backgroundColor = [UIColor blackColor];
     
-    CGSize pageControlSize = [_pageControl sizeForNumberOfPages:6];
-    CGPoint pageControlOrigin = {(_collectionView.bounds.size.width - pageControlSize.width) / 2, _collectionView.size.height - pageControlSize.height - 5};
-    CGRect pageControlFrame = {pageControlOrigin, pageControlSize};
-    _pageControl.frame = pageControlFrame;
-    //    _pageControl.center = CGPointMake(_collectionView.bounds.size.width / 2, _collectionView.bounds.size.height - 20);
+#pragma mark == page设置
+    self.pageControl = [[UIPageControl alloc] init];
+    _pageControl.numberOfPages = _collectionViewArray.count;
+    _pageControl.pageIndicatorTintColor = [UIColor colorWithWhite:0.766 alpha:1.000];
     _pageControl.currentPageIndicatorTintColor = [UIColor whiteColor];
     _pageControl.hidesForSinglePage = YES;
+    _pageControl.currentPage = 0;
     [_pageControl addTarget:self action:@selector(pageControlValueChanged:) forControlEvents:UIControlEventValueChanged];
-    [_collectionView addSubview:_pageControl];
+    [headerView addSubview:_pageControl];
+    
+    if (_timer) {
+        [_timer invalidate];
+    }
+    
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:3.0f target:self selector:@selector(timerAction:) userInfo:nil repeats:YES];
+    
 #pragma mark - 头视图搜索框
     
     UIView *upView = [[UIView alloc] init];
@@ -179,11 +187,20 @@ UICollectionViewDataSource
 
 }
 
+
+#pragma mark - 轮播图
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 99;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    
+//    确定page的大小位置
+    CGSize pageControlSize = [_pageControl sizeForNumberOfPages:_collectionViewArray.count];
+    CGPoint pageControlOrigin = {(_collectionView.width - pageControlSize.width) / 2, _collectionView.height - pageControlSize.height};
+    CGRect pageControlFrame = {pageControlOrigin, pageControlSize};
+    _pageControl.frame = pageControlFrame;
+    _pageControl.numberOfPages = _collectionViewArray.count;
     return _collectionViewArray.count;
 }
 
@@ -194,16 +211,61 @@ UICollectionViewDataSource
     return cell;
 }
 
+
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     HomeSlideModel *homeSlideModel = _collectionViewArray[indexPath.row];
     
 }
+
+- (void)timerAction:(NSTimer *)timer {
+    NSInteger number = _collectionView.contentOffset.x / _collectionView.width;
+    // 当前图片为第几张图片
+    NSInteger pageNumber = (number + 1) % _collectionViewArray.count;
+    
+    [_collectionView setContentOffset:CGPointMake((number + 1) * _collectionView.width, 0) animated:YES];
+    if (pageNumber == 0) {
+        _pageControl.currentPage = 0;
+    }
+    _pageControl.currentPage = pageNumber;
+}
+
+// 滑动时, 轮播图的暂停和重新开始
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+    if ([scrollView isEqual:_collectionView]) {
+        [_timer setFireDate:[NSDate distantFuture]];
+    }
+}
+
+// 结束拖拽时, 重启定时器
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+    if ([scrollView isEqual:_collectionView]) {
+        [_timer setFireDate:[NSDate dateWithTimeIntervalSinceNow:3.0f]];
+    }
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    
+    if ([scrollView isEqual:_collectionView]) {
+        // 求是第几张图片
+        NSInteger number = scrollView.contentOffset.x / scrollView.width;
+        NSInteger imageNumber = number % _collectionViewArray.count;
+        // 使page位置与图片关联
+        NSInteger pageNumber = imageNumber;
+        _pageControl.currentPage = pageNumber;
+    }
+}
+// 初始偏移量
+// _collectionView.bounds.size.width * _collectionViewArray.count * 50
+
+#warning 每次点击回到第50组图片, 图片闪动太大
 - (void)pageControlValueChanged:(UIPageControl *)pageControl {
-    [_collectionView setContentOffset:CGPointMake((pageControl.currentPage + 1) * self.view.bounds.size.width, 0) animated:YES];
+    [_collectionView setContentOffset:CGPointMake((pageControl.currentPage + 1) * _collectionView.width + _collectionView.width * _collectionViewArray.count * 50 - _collectionView.width, 0) animated:YES];
 }
 
 
-#pragma mark - Cell
+#pragma mark - TableView
+
+
 /// 调节高度
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
 //    /// 第一种高度
@@ -223,7 +285,7 @@ UICollectionViewDataSource
     } else if (3 == homeModel.type) {
         return 435.f;
     } else {
-        return 405.f;
+        return 420.f;
     }
  
 }
@@ -280,6 +342,10 @@ UICollectionViewDataSource
     }
 #endif
 }
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"haha : %ld", indexPath.row);
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

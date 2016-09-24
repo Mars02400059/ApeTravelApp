@@ -11,7 +11,10 @@
 		49252C511D93E2430068B48E /* SlideCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49252C501D93E2430068B48E /* SlideCollectionViewCell.m */; };
 		49252C541D9405E20068B48E /* CommendView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49252C531D9405E20068B48E /* CommendView.m */; };
 		49252C571D940CBB0068B48E /* TabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49252C561D940CBB0068B48E /* TabView.m */; };
+		4939FD901D955A0400FDC0AD /* FootprintPopBournModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4939FD8F1D955A0400FDC0AD /* FootprintPopBournModel.m */; };
 		496BD9FD1D92C6260013E78A /* HomeOneTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 496BD9FC1D92C6260013E78A /* HomeOneTableViewCell.m */; };
+		49A01AD21D950D980066C1B9 /* AZBaseLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A01AD11D950D980066C1B9 /* AZBaseLabel.m */; };
+		49A01AD51D9518F20066C1B9 /* AZBaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A01AD41D9518F20066C1B9 /* AZBaseButton.m */; };
 		49D9AF851D92167B0095FB0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D9AF841D92167B0095FB0D /* main.m */; };
 		49D9AF881D92167B0095FB0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D9AF871D92167B0095FB0D /* AppDelegate.m */; };
 		49D9AF8B1D92167B0095FB0D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D9AF8A1D92167B0095FB0D /* ViewController.m */; };
@@ -64,8 +67,14 @@
 		49252C531D9405E20068B48E /* CommendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommendView.m; sourceTree = "<group>"; };
 		49252C551D940CBB0068B48E /* TabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabView.h; sourceTree = "<group>"; };
 		49252C561D940CBB0068B48E /* TabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabView.m; sourceTree = "<group>"; };
+		4939FD8E1D955A0400FDC0AD /* FootprintPopBournModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FootprintPopBournModel.h; path = WJQ_ApeTravel/Base/View/FootprintPopBournModel.h; sourceTree = SOURCE_ROOT; };
+		4939FD8F1D955A0400FDC0AD /* FootprintPopBournModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FootprintPopBournModel.m; path = WJQ_ApeTravel/Base/View/FootprintPopBournModel.m; sourceTree = SOURCE_ROOT; };
 		496BD9FB1D92C6260013E78A /* HomeOneTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeOneTableViewCell.h; sourceTree = "<group>"; };
 		496BD9FC1D92C6260013E78A /* HomeOneTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeOneTableViewCell.m; sourceTree = "<group>"; };
+		49A01AD01D950D980066C1B9 /* AZBaseLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZBaseLabel.h; sourceTree = "<group>"; };
+		49A01AD11D950D980066C1B9 /* AZBaseLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZBaseLabel.m; sourceTree = "<group>"; };
+		49A01AD31D9518F20066C1B9 /* AZBaseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZBaseButton.h; sourceTree = "<group>"; };
+		49A01AD41D9518F20066C1B9 /* AZBaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZBaseButton.m; sourceTree = "<group>"; };
 		49D9AF801D92167B0095FB0D /* WJQ_ApeTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WJQ_ApeTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49D9AF841D92167B0095FB0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		49D9AF861D92167B0095FB0D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -349,6 +358,8 @@
 		49D9AFBE1D9217D70095FB0D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4939FD8E1D955A0400FDC0AD /* FootprintPopBournModel.h */,
+				4939FD8F1D955A0400FDC0AD /* FootprintPopBournModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -463,6 +474,10 @@
 			children = (
 				49D9AFD31D9218560095FB0D /* AZBaseView.h */,
 				49D9AFD41D9218560095FB0D /* AZBaseView.m */,
+				49A01AD01D950D980066C1B9 /* AZBaseLabel.h */,
+				49A01AD11D950D980066C1B9 /* AZBaseLabel.m */,
+				49A01AD31D9518F20066C1B9 /* AZBaseButton.h */,
+				49A01AD41D9518F20066C1B9 /* AZBaseButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -701,6 +716,7 @@
 				49D9AFC91D9218420095FB0D /* NSString+Regex.m in Sources */,
 				49D9AFAD1D9217400095FB0D /* AboutMe.text in Sources */,
 				49D9AFDD1D921AB20095FB0D /* FootprintViewController.m in Sources */,
+				49A01AD51D9518F20066C1B9 /* AZBaseButton.m in Sources */,
 				49D9AFCA1D9218420095FB0D /* UIView+Frame.m in Sources */,
 				49252C541D9405E20068B48E /* CommendView.m in Sources */,
 				49D9AFD61D9218560095FB0D /* AZBaseModel.m in Sources */,
@@ -708,6 +724,7 @@
 				49D9AF851D92167B0095FB0D /* main.m in Sources */,
 				49252C511D93E2430068B48E /* SlideCollectionViewCell.m in Sources */,
 				49D9AFE91D924C540095FB0D /* HomeViewController.m in Sources */,
+				49A01AD21D950D980066C1B9 /* AZBaseLabel.m in Sources */,
 				49D9AF911D92167B0095FB0D /* WJQ_ApeTravel.xcdatamodeld in Sources */,
 				49D9AFEC1D9267DA0095FB0D /* HomeTableViewCell.m in Sources */,
 				49252C4E1D93E1610068B48E /* HomeSlideModel.m in Sources */,
@@ -718,6 +735,7 @@
 				49F5CFA61D936DC5006DA898 /* HomeThreeTableViewCell.m in Sources */,
 				49D9AFD71D9218560095FB0D /* AZBaseView.m in Sources */,
 				49D9AFEF1D926ED20095FB0D /* HomeModel.m in Sources */,
+				4939FD901D955A0400FDC0AD /* FootprintPopBournModel.m in Sources */,
 				49252C571D940CBB0068B48E /* TabView.m in Sources */,
 				49D9AFD51D9218560095FB0D /* AZBaseController.m in Sources */,
 				49D9AFE01D921AC00095FB0D /* DiscountViewController.m in Sources */,

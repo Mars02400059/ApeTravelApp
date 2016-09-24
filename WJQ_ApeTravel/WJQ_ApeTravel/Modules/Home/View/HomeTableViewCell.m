@@ -85,7 +85,6 @@
     
     NSURL *cover = [NSURL URLWithString:homeModel.cover];
     [_coverImageView sd_setImageWithURL:cover];
-    NSLog(@"%@", homeModel.cover);
     
     _columnLabel.text = homeModel.column;
     _titleLabel.text = homeModel.title;

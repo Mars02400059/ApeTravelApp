@@ -36,11 +36,14 @@
 //    _tabBarController.tabBar.tintColor = [UIColor grayColor];
     // 背景颜色
     _tabBarController.tabBar.barTintColor = [UIColor colorWithRed:0.836 green:0.880 blue:0.820 alpha:1.000];
+
     
     HomeViewController *homeVc = [[HomeViewController alloc] init];
     [self setViewController:homeVc tabBarTitle:@"推荐" tabBarImage:@"home"];
+    
     FootprintViewController *footprintVC = [[FootprintViewController alloc] init];
     [self setViewController:footprintVC tabBarTitle:@"目的地" tabBarImage:@"footprint"];
+    
     DiscountViewController *discountVC = [[DiscountViewController alloc] init];
     [self setViewController:discountVC tabBarTitle:@"旅行商城" tabBarImage:@"discount"];
     CommunityViewController *communityVC = [[CommunityViewController alloc] init];

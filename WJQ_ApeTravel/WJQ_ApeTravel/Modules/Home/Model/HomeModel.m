@@ -10,4 +10,12 @@
 
 @implementation HomeModel
 
+- (void)setCover:(NSString *)cover {
+    NSMutableString *str = [NSMutableString stringWithString:cover];
+    [str replaceOccurrencesOfString:@"webp" withString:@"jpg" options:NSCaseInsensitiveSearch range:NSMakeRange(0, str.length)];
+    _cover = str;
+}
+
+
+
 @end
